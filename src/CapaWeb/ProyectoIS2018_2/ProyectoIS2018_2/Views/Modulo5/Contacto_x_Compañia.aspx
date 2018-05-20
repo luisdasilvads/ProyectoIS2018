@@ -58,7 +58,7 @@
     <div  id="Botom"class="botones">
         <h3> Que deseas hacer : </h3>
 
-        <a  href="#" class="btn btn-success "> Nuevo contacto</a>
+        <a  href="/Views/Modulo5/Crear_Contacto" class="btn btn-success "> Nuevo contacto</a>
         <a  href="/Views/Modulo5/ConsultarContacto" class="btn btn-warning "> Consultar Contacto</a>
         <a  href="#" class="btn btn-danger  "> Eliminar contacto</a>     
         <br />

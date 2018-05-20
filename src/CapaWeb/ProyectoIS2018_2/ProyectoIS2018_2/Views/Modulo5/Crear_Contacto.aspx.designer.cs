@@ -10,6 +10,6 @@
 namespace ProyectoIS2018_2.Views.Modulo5 {
     
     
-    public partial class WebForm1 {
+    public partial class Crear_Contacto {
     }
 }
