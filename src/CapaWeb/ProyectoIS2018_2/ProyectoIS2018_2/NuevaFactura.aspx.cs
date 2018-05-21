@@ -23,5 +23,15 @@ namespace ProyectoIS2018_2
         {
 
         }
+
+        protected void List_Cuotas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+             
+    }
     }
 }

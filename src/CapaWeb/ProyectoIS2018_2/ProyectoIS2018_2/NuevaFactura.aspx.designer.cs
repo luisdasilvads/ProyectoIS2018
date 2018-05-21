@@ -13,13 +13,13 @@ namespace ProyectoIS2018_2 {
     public partial class About {
         
         /// <summary>
-        /// Control Label2.
+        /// Control lbl_nfactura.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lbl_nfactura;
         
         /// <summary>
         /// Control Label1.
@@ -40,58 +40,58 @@ namespace ProyectoIS2018_2 {
         protected global::System.Web.UI.WebControls.TextBox Txt_fechafactura;
         
         /// <summary>
-        /// Control TextBox1.
+        /// Control Txt_Nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox Txt_Nombre;
         
         /// <summary>
-        /// Control TextBox2.
+        /// Control Txt_Domicilio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox Txt_Domicilio;
         
         /// <summary>
-        /// Control TextBox3.
+        /// Control Txt_ID.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox Txt_ID;
         
         /// <summary>
-        /// Control TextBox4.
+        /// Control Txt_Telf.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox Txt_Telf;
         
         /// <summary>
-        /// Control Calendar1.
+        /// Control Cal_Vencimiento.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.Calendar Cal_Vencimiento;
         
         /// <summary>
-        /// Control DropDownList1.
+        /// Control List_Cuotas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList List_Cuotas;
         
         /// <summary>
         /// Control Panel1.
@@ -155,15 +155,6 @@ namespace ProyectoIS2018_2 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button2;
-        
-        /// <summary>
-        /// Control Button3.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button3;
         
         /// <summary>
         /// Control Label3.

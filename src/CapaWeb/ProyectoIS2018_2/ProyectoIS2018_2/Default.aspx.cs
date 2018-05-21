@@ -28,5 +28,10 @@ namespace ProyectoIS2018_2
         {
 
         }
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 0;
+        }
     }
 }
