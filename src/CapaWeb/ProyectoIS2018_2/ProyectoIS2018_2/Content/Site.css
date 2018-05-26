@@ -1,7 +1,12 @@
-﻿/* Move down content because we have a fixed navbar that is 50px tall */
+﻿
+
+/* Move down content because we have a fixed navbar that is 50px tall */
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #DEDEDE;
+    display: flex;
+    min-height: 100vh;
 }
 
 /* Wrapping element */
@@ -12,7 +17,7 @@ body {
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
-input,
+
 select,
 textarea {
     max-width: 280px;
