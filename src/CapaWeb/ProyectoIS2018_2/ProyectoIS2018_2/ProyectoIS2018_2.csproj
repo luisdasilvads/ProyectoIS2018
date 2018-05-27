@@ -164,6 +164,9 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Gestion_Compañia.aspx" />
+    <Content Include="Gestion_Nombre.aspx" />
+    <Content Include="Gestion_Proyecto.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -235,6 +238,27 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Compañia.aspx.cs">
+      <DependentUpon>Gestion_Compañia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Compañia.aspx.designer.cs">
+      <DependentUpon>Gestion_Compañia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Nombre.aspx.cs">
+      <DependentUpon>Gestion_Nombre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Nombre.aspx.designer.cs">
+      <DependentUpon>Gestion_Nombre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_Proyecto.aspx.cs">
+      <DependentUpon>Gestion_Proyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gestion_Proyecto.aspx.designer.cs">
+      <DependentUpon>Gestion_Proyecto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
