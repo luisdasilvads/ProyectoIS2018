@@ -1,0 +1,75 @@
+﻿body {
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    border-color: black;    
+}
+
+
+
+ul {
+     position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;    
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+    .active {
+        background-color: #4CAF50;
+    }
+
+/*Empleados Show Panel*/
+#Show, .flip {
+    padding: 10px;
+    border: solid 3px;
+    border-right-color: #ffffff;
+    border-left-color: #ffffff;
+    border-bottom-color: #f5f5f5;
+    border-top-color: #f5f5f5;
+    border-radius: 25px; 
+}
+
+#Show {
+    display: none;
+}

@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dashboard.master.cs" Inherits="ProyectoIS2018_2.Dashboard" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/DashboardStyle.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+<ul>
+    <li><a class="active" href="/Modulo_1/Dashboard.aspx">SISTEMA</a></li>
+    <li><a href="/Modulo_10/Empleados.aspx">Empleados</a></li>
+    <li><a href="#contact">Modulo2</a></li>
+    <li style="float:right"><a href="/Modulo_1/Login.aspx">Salir</a></li>
+    <li style="float:right"><a href="#USUARIO">Username</a></li>
+
+</ul>
+    </div>
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <p style="margin-top: 50px; margin-left:50px; margin-right:50px; border-top: 1px solid black; float:left;">Proyecto ucab 2018</p>
+    
+    </form>
+</body>
+</html>

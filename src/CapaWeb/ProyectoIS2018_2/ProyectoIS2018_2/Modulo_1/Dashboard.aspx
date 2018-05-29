@@ -1,37 +1,37 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Dashboard.aspx.cs" Inherits="ProyectoIS2018_2.Modulo_1.Dashboard" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dashboard.Master" AutoEventWireup="true" CodeBehind="Dashboard.aspx.cs" Inherits="ProyectoIS2018_2.Modulo_1.Dashboard" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-</head>
-<body>
-    <form id="form1" runat="server">
-    
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <!-- <li><a runat="server" href="~/Contact">Contact</a></li> -->
-                        <li><a runat="server" href="~\Modulo_1\Login">About</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </form>
-</body>
-</html>
+      <div style="margin-top: 100px; margin-left:50px; margin-right:50px;">
+        <h1> Dashboard</h1>
+    </div>
+  
+    <div id="tablas_dash">
+        <table id="table_facturas" style="margin-top:50px; margin-left: 50px; margin-right:50px; width: 40%; float:left ">
+            <tr>
+                <th style="text-align: center">
+                    Últimas Facturas Pagadas
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <p>Factura - Fecha - Monto</p>
+                </td>
+            </tr>
+        </table>
+  
+        <table id="table_proyect" style="margin-top:50px; margin-left: 50px; margin-right:50px; width: 40%; float:left">
+            <tr>
+                <th style="text-align:center;">Últimos Proyectos Realizados</th>
+            </tr>
+            <tr>
+                <td>
+                    <p>Proyecto - Fecha - Lider - Compañia</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+    </div>
+</asp:Content>
