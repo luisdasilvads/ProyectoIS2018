@@ -33,5 +33,23 @@ namespace ProyectoIS2018_2
         {
              
     }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Txt_fechafactura.Text = "";
+            Txt_Nombre.Text = "";
+            Txt_Domicilio.Text = "";
+            Txt_ID.Text = "";
+            Txt_Telf.Text = "";
+            TextBox5.Text = "";
+            TextBox6.Text = "";
+            TextBox7.Text = "";
+            TextBox8.Text = "";
+        }
     }
 }

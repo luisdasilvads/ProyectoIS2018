@@ -4,7 +4,7 @@
     <h1 style="text-shadow: 5px 5px 5px #ff0000;" class="text-center">SISTEMA DE FACTURACIÓN SAC</h1>
      <p style="text-shadow: 5px 5px 5px #ff0000; font-size: 21pt;" class="text-center">&nbsp;Generación de una Nueva Factura
          </p>
-    <span style="font-size: 21px">
+    <div style="font-size: 21px">
     <br />
     Factura N°:
     <asp:Label ID="lbl_nfactura" runat="server" style="font-weight: 700" Text="NumeroFactura"></asp:Label>
@@ -12,7 +12,7 @@
     <br />
     <div>
     <asp:Label ID="Label1" runat="server" Text="Fecha de Hoy: "></asp:Label>
-        <asp:TextBox ID="Txt_fechafactura" runat="server" Font-Size="Medium" Height="25px" OnTextChanged="Txt_fechafactura_TextChanged">DD/MM/AAAA</asp:TextBox>
+        <asp:TextBox ID="Txt_fechafactura" runat="server" Font-Size="Medium" Height="25px" OnTextChanged="Txt_fechafactura_TextChanged"></asp:TextBox>
     
         <br />
         <br />
@@ -33,7 +33,7 @@
         <asp:TextBox ID="Txt_Telf" runat="server" Height="25px" Width="212px" Font-Size="Medium"></asp:TextBox>
         <br />
         <br />
-        Fecha de Vencimiento:<span style="font-size: 21px"><asp:Calendar ID="Cal_Vencimiento" runat="server" CaptionAlign="Top" CellPadding="10"></asp:Calendar>
+        Fecha de Vencimiento:<div style="font-size: 21px"><asp:Calendar ID="Cal_Vencimiento" runat="server" CaptionAlign="Top" CellPadding="10"></asp:Calendar>
         <br />
         Numero de cuotas a dividir el pago:
         <asp:DropDownList ID="List_Cuotas" runat="server" Font-Size="Medium" Height="19px" OnSelectedIndexChanged="List_Cuotas_SelectedIndexChanged">
@@ -150,13 +150,13 @@
             <div class="text-center">
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Calcular" />
             &nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button2" runat="server" Text="Limpiar" />
+            <asp:Button ID="Button2" runat="server" Text="Limpiar" OnClick="Button2_Click" />
                 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
             <br />
                 </div>
         </asp:Panel>
         <br />
-    </span>
+    </div>
     &nbsp;Saldo pendiente por cancelar:&nbsp;
         <asp:Label ID="Label3" runat="server" style="font-weight: 700" Text="SaldoPendiente"></asp:Label>
         <br />
@@ -165,12 +165,12 @@
         <br />
         <br />
         <div class="text-center">
-        <asp:Button ID="Button4" runat="server" Text="Generar Factura" />
+        <asp:Button ID="Button4" runat="server" Text="Generar Factura" OnClick="Button4_Click" />
 &nbsp;
         <asp:Button ID="Button5" runat="server" Text="Volver y Cancelar" OnClick="Button5_Click" PostBackUrl="~/Default.aspx" />
         <br />
     <br />
             </div>
         </div>
-    </span>
+   </div>
     </asp:Content>

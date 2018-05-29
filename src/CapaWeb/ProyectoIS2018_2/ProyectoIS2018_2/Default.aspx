@@ -4,8 +4,12 @@
 
     <div class="jumbotron">
         <h1 style="text-shadow: 5px 5px 5px #ff0000;" class="text-center">SISTEMA DE FACTURACIÓN SAC</h1>
-        <p style="text-shadow: 5px 5px 5px #ff0000;" class="text-center">&nbsp;Panel de Control de Facturas por Proyecto<asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
-            <asp:View ID="View0" runat="server">
+        
+       <p style="text-shadow: 5px 5px 5px #ff0000; font-size: 21pt;" class="text-center">&nbsp;Generación de una Nueva Factura
+         </p>
+        <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
+        <div>    
+        <asp:View ID="View0" runat="server">
                 <div>
                 <h3 style="font:bold 30px arial;"  class="text-center"> &nbsp;</h3>
                     <h3 class="text-center" style="font:bold 30px arial;">Seleccione uno de sus proyectos de la lista</h3>
@@ -197,11 +201,6 @@
                             </tr>
                             <tr runat="server">
                                 <td runat="server" style="text-align: center;background-color: #FFCC66; font-family: Verdana, Arial, Helvetica, sans-serif;color: #333333;">
-                                    <asp:DataPager ID="DataPager1" runat="server">
-                                        <Fields>
-                                            <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowLastPageButton="True" />
-                                        </Fields>
-                                    </asp:DataPager>
                                 </td>
                             </tr>
                         </table>
@@ -243,6 +242,7 @@
                 </asp:ListView>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Numero_Factura], [Porcentaje], [Monto], [Fecha_Creacion], [Numero_Cuota], [Nombre_Razon], [Domicilio], [CI_RIF], [Telefono], [Fecha_Vencimiento] FROM [Lista_Facturas
 ]"></asp:SqlDataSource>
+                <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/MostrarFactura.aspx">Ver Facutra</asp:LinkButton>
                 <br />
                 <br />
                 <p class="text-center">
@@ -250,7 +250,7 @@
                     </p>
             </asp:View>
             </asp:MultiView>
-        </p>
+        </div>
     </div>
 
     <div class="row">
@@ -258,4 +258,5 @@
         </div>
     </div>
 
+    </div>
 </asp:Content>
