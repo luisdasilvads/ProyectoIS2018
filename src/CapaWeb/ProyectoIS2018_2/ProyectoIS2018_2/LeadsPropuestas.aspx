@@ -1,10 +1,7 @@
-﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LeadsPropuesta.aspx.cs" Inherits="ProyectoIS2018_2.About" %>
+﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LeadsPropuestas.aspx.cs" Inherits="ProyectoIS2018_2.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <link href="/Content/Site.css" rel="stylesheet">
-    <link href="/Content/bootstrap.css" rel="stylesheet">
     <h1 class="text-center">Leads</h1>
-
     <div class="jumbotron">
         <h2 style="text-align: left">Nueva Propuesta</h2>
         <h5>Empresa:

@@ -154,8 +154,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LeadsPropuestas.aspx" />
     <Content Include="LeadsDetalle.aspx" />
-    <Content Include="LeadsPropuesta.aspx" />
     <Content Include="About.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -215,19 +215,19 @@
     <Content Include="Views\web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LeadsPropuestas.aspx.cs">
+      <DependentUpon>LeadsPropuestas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeadsPropuestas.aspx.designer.cs">
+      <DependentUpon>LeadsPropuestas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LeadsDetalle.aspx.cs">
       <DependentUpon>LeadsDetalle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="LeadsDetalle.aspx.designer.cs">
       <DependentUpon>LeadsDetalle.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LeadsPropuesta.aspx.cs">
-      <DependentUpon>LeadsPropuesta.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LeadsPropuesta.aspx.designer.cs">
-      <DependentUpon>LeadsPropuesta.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

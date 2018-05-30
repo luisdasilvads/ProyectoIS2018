@@ -1,9 +1,7 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LeadsDetalle.aspx.cs" Inherits="ProyectoIS2018_2.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
     <h1 class="text-center">Leads</h1>
-
     <div class="jumbotron">
         <div>
         <h2 style="text-align: left">Leads Detalle</h2>
@@ -22,21 +20,19 @@
         <td style="text-align:center; background-color:#337ab7; color: #FFFFFF;"><strong>Nombre de las Propuestas</strong></td>
         <td style="text-align:center; background-color:#337ab7; color: #FFFFFF;"><strong>Detalle de las Propuestas</strong></td>
         </tr>
-        <td style="text-align:center; background-color:#FFFFFF; color:black"><strong>
+        <td style="text-align:center; background-color:#FFFFFF; color:black">
             <ol style="text-align:center">
                 <li>Propuesta</li>    
                 <li>Propuesta</li>
                 <li>Propuesta</li>
             </ol>
-            </strong>
         </td>
-        <td style="text-align:center; background-color:#FFFFFF; color:black"><strong>
+        <td style="text-align:center; background-color:#FFFFFF; color:black">
             <ol style="text-align:center">
                 <li>Detalle</li>    
                 <li>Detalle</li>
                 <li>Detalle</li>
             </ol>
-            </strong>
         </td>
         </table>
         </div>
