@@ -1,8 +1,8 @@
-﻿<%@ Page Title="Contacto_x_Compañia" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contacto_x_Compañia.aspx.cs" Inherits="ProyectoIS2018_2.Views.Modulo5.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contacto_leads.aspx.cs" Inherits="ProyectoIS2018_2.Views.Modulo5.Contacto_leads" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <!--Diseños -->
-    <style>
+
+      <style>
       #tabla{
           background-color:lightgrey;
           color:black;
@@ -16,17 +16,16 @@
         #b-regresar {
             background-color :dimgray;
             color:white;
-      
         }
        
     </style>
 
-  <div class="container-fluid">
-    <h2> Contactos Por compañia</h2>
-         <p>Listas de Contactos de la empresa seleccionada: </p>            
-        
-      
-      <table id="tabla" class="table table-bordered"> <!-- Declaracion de la tabla  -->
+<div class="container-fluid">
+
+        <h2> Contactos por Leads</h2>
+         <p>Listas de Contactos : </p>   
+
+     <table id="tabla" class="table table-bordered"> <!-- Declaracion de la tabla  -->
          <thead>
             <tr>
                 <th id="nombre">Firstname</th>
@@ -36,42 +35,40 @@
         </thead>
              <tbody> <!-- Contenido que tiene la tabla -->
                 <tr> <!-- Primer usuario-->
-                    <td>John</td>
+                    <td>Joh</td>
                     <td>Doe</td>
-                    <td>HBO</td>
+                    <td>Freelancer </td>
                </tr>
                 <tr><!-- Segundo usuario-->
                     <td>Mary</td>
                     <td>Moe</td>
-                    <td>Macdonal</td>
+                    <td>No tiene</td>
                </tr>
                 <tr><!-- Tercer usuario-->
                     <td>July</td>
                     <td>Dooley</td>
-                    <td>IBM</td>
+                    <td> Vippo</td>
                </tr>
             </tbody>
     </table>
 
 
-
-   <!-- Aqui se estan creando los botones de  Crear ,Eliminar , Editar -->
-    <div  id="Botom"class="botones">
+      <div  id="Botom"class="botones">
         <h3> Que deseas hacer : </h3>
 
-        <a  href="/Views/Modulo5/Crear_Contacto" class="btn btn-success "> Nuevo contacto</a>
-        <a  href="/Views/Modulo5/ConsultarContacto" class="btn btn-warning "> Consultar Contacto</a>
-        <a  href="#" class="btn btn-danger  "> Eliminar contacto</a>     
+        <a  href="/Views/Modulo5/Crear_Contacto" class="btn btn-success "> Nuevo leads </a>
+        <a  href="/Views/Modulo5/ConsultarContacto" class="btn btn-warning "> Consultar leads</a>
+        <a  href="#" class="btn btn-danger  "> Eliminar leads</a>     
         <br />
     </div>
     <br />
     
     <div>
-        <a id="b-regresar" href="/default.aspx" class="btn btn-info "> Regresar </a>
+        <a id="b-regresar" href="/Default.aspx" class="btn btn-info "> Regresar</a>
     </div>
     <br />
 
-</div>
 
+</div>
 
 </asp:Content>

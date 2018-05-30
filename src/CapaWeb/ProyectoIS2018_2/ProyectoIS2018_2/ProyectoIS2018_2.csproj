@@ -207,6 +207,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\Modulo5\Contacto_leads.aspx" />
     <Content Include="Views\Modulo5\Contacto_x_Compañia.aspx" />
     <Content Include="Views\Modulo5\ConsultarContacto.aspx" />
     <Content Include="Views\Modulo5\Crear_Contacto.aspx" />
@@ -265,6 +266,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modulo5\Contacto_leads.aspx.cs">
+      <DependentUpon>Contacto_leads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Modulo5\Contacto_leads.aspx.designer.cs">
+      <DependentUpon>Contacto_leads.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Modulo5\Contacto_x_Compañia.aspx.cs">
       <DependentUpon>Contacto_x_Compañia.aspx</DependentUpon>
