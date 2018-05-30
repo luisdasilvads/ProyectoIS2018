@@ -1,0 +1,44 @@
+﻿<%@Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LeadsPaginaController.cs" Inherits="LeadsPaginaController" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+    <!-- Vista de formulario para un nuevo Lead -->
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <h1>LEADS</h1>
+
+        <div class="container">
+            <h2>Nuevo Lead</h2>
+
+            <a id="botonRegresar" href="~/Views/LeadsPagina/">Regresar</a>
+
+            <form action="/action.php" method="post">
+                Compañia: <input name="nameCom" type="text">
+                Nombre del contacto: <input name="nameCont" type="text">
+                <input checked="checked" name="tipoContacto" type="radio" value="telefono" /> Telefono <input name="tipoContacto" type="radio" value="email"> Email
+                Contacto: <input name="datoCont" type="text"> <br>
+                <textarea cols="20" name="comments" rows="5">Comentarios</textarea> <br>
+                <label><input name="terms" type="checkbox" value="tandc" />Aceptar terminos</label>
+                <input type="submit" value="Submit" class="popup" onclick="mostrarPopUp()">
+                <span id="miPopUp">Nuevo Lead agregado exitosamente.</span>
+            </form>
+        </div>
+    </body>
+
+    <script>
+
+        // Script mostrar anuncio de operación exitosa
+
+        function mostrarPopUp() {
+            var popup = document.getElementById("miPopUp");
+            popup.classList.toggle("mostrar");
+        }
+    </script>
+
+</asp:Content>
+
