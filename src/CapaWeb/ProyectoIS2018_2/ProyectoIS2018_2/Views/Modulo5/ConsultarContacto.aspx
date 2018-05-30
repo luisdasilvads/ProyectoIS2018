@@ -11,24 +11,31 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style>
-          #b-regresar {
+          #regresar {
             background-color :dimgray;
             color:white;
+      
         }  
             #tabla{         
-          background-color:lightgrey;
+          background-color:lightgray;
           color:black;
+          
        }
              #nombre,#apellido,#ci,#email,#empresa {
            background-color:black;
            color:aliceblue;
         }
-   
 
+             #myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
 
+ 
     </style>
-  
-
 </head>
     
 <div class="container">
@@ -43,10 +50,11 @@
         <th id="ci">C.I.</th>    <!-- contenidos de la tabla -->
         <th id="email">Email</th>
         <th id="empresa">Empresa</th>
+          
       </tr>
     </thead>
     <tbody id="myTable">
-      <tr>
+      <tr onclick ="desplegar();">
         <td>Catia</td>
         <td>La Mar</td>
         <td>26.411.509</td>
@@ -91,8 +99,24 @@
     </tbody>
   </table>
 
-     <a id="b-regresar" href="/Views/Modulo5/Contacto_x_Compañia" class="btn btn-info ">Regresar</a>
+     <a id="regresar" href="/Views/Modulo5/Contacto_x_Compañia" class="btn btn-info ">Regresar</a>
 </div>
+
+
+    <asp:Table ID="Table1" runat="server" Width="100%"> 
+    <asp:TableRow>
+        <asp:TableCell>Name</asp:TableCell>
+        <asp:TableCell>Task</asp:TableCell>
+        <asp:TableCell>Hours</asp:TableCell>
+    </asp:TableRow>
+</asp:Table>  
+
+    TableRow row = new TableRow();
+TableCell cell1 = new TableCell();
+cell1.Text = "blah blah blah";
+row.Cells.Add(cell1);
+myTable.Rows.Add(row);
+
 
 <script>
 $(document).ready(function(){
@@ -102,7 +126,16 @@ $(document).ready(function(){
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
-});
+    });
+
+    function desplegar) {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 </script>
 
 

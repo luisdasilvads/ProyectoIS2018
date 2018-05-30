@@ -16,6 +16,7 @@
         #b-regresar {
             background-color :dimgray;
             color:white;
+      
         }
        
     </style>
