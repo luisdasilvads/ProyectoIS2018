@@ -11,15 +11,13 @@
         </p>
         <div style="height: 50px">
             <form <!--action="/Link modulo 5"-->
-            <button type="submit" class="btn btn-primary" style="width:200px">Ver contactos</button>
+             <a  href="/Views/Modulo5/ConsultarContacto" class="btn btn-warning "> Consultar Contacto</a>
             </form>
         </div>           
         <div style="height: 34px">
-        <form> <!--action="/Link modulo 5"-->
-            <button type="submit" class="btn btn-danger" style="width:200px; float:left; margin-right: 20px">Eliminar contactos</button>
-        </form>
+       
         <form> <!--action="/Link modulo 5"--> 
-            <button type="submit" class="btn btn-primary" style="width:200px; float:left">Modificar contactos</button>
+            <a href="/Views/Modulo5/Contacto_x_Compañia" class="btn btn-primary" style="width:200px; float:left">Modificar contactos</a>
         </form>
         </div>
     </div>
