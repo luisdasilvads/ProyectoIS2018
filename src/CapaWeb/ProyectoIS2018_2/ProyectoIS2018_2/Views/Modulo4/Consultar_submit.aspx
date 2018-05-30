@@ -17,7 +17,7 @@
         <div style="height: 34px">
        
         <form> <!--action="/Link modulo 5"--> 
-            <a href="/Views/Modulo5/Contacto_x_Compañia" class="btn btn-primary" style="width:200px; float:left">Modificar contactos</a>
+            <a href="/Views/Modulo5/ConsultarContacto" class="btn btn-primary" style="width:200px; float:left">Modificar Contacto</a>
         </form>
         </div>
     </div>

@@ -12,10 +12,10 @@
             <input type="text" placeholder="Ej: J-00000000-0" name="companyname"><br>
         </p>
         <form> <!--action="/Link modulo 5"-->
-            <button type="submit" class="btn btn-primary" style="width:200px; margin-top: 10px; float:left; margin-right: 20px">Agregar contactos</button>
+           <a  href="/Views/Modulo5/Crear_Contacto" class="btn btn-success "> Agregar Contacto</a>
         </form>
         <form> <!--action="/Link modulo 5"--> 
-            <button type="submit" class="btn btn-primary" style="width:200px; margin-top: 10px; float:left">Modificar contactos</button>
+           <a  href="/Views/Modulo5/ConsultarContacto" class="btn btn-warning "> Modificar Contacto</a>
         </form>
     </div>
 </asp:Content>

@@ -183,15 +183,23 @@
         </div>
 
     <div>
-        <button class="btn btn-success ">Guardar </button>
+        <button type="button" onclick="goBack()" class= "btn btn-success ">Guardar </button>
+         <button type="button" onclick="goBack()" class= "btn btn-danger ">Cancelar </button>
 
-         <a href="/Views/Modulo5/Contacto_x_Compañia" class="btn btn-danger  ">Cancelar</a> 
+         
 
     </div>
    
 </div>
 
     
- 
+ <script>
+function goBack() {
+    window.history.back()
+}
+</script>
+</head>
+<body>
+
 
 </asp:Content>

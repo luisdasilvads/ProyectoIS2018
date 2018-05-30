@@ -11,33 +11,56 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style>
-          #regresar {
+          #b-regresar {
             background-color :dimgray;
             color:white;
-      
         }  
             #tabla{         
-          background-color:lightgray;
+          background-color:lightgrey;
           color:black;
-          
        }
              #nombre,#apellido,#ci,#email,#empresa {
            background-color:black;
            color:aliceblue;
         }
+			#Opciones{
+			color:black;
+			background-color:black;
+			}
+	
+	
+	
+		.dropdown {
+		position: relative;
+		display: inline-block;
+		}
+		.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 50px;
+		overflow: auto;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		}
+		.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		}
 
-             #myDIV {
-    width: 100%;
-    padding: 50px 0;
-    text-align: center;
-    background-color: lightblue;
-    margin-top: 20px;
-}
+		.dropdown a:hover {background-color: #ddd}
 
- 
+		.show {display:block;}
+
     </style>
+  
+
 </head>
-    
+
+
+
 <div class="container">
   <h2>Lista de Contactos</h2>
   <input id="myInput" class="form-control"  type="text" placeholder="Buscar.."> <br/>
@@ -50,16 +73,27 @@
         <th id="ci">C.I.</th>    <!-- contenidos de la tabla -->
         <th id="email">Email</th>
         <th id="empresa">Empresa</th>
-          
+		<th id="Opciones">E</th>
+		
       </tr>
     </thead>
     <tbody id="myTable">
-      <tr onclick ="desplegar();">
+      <tr>
+	    
         <td>Catia</td>
         <td>La Mar</td>
         <td>26.411.509</td>
         <td>catia@example.com</td>
         <td>IBM</td>
+		<td>
+			<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">+</button>
+			<div id="myDropdown" class="dropdown-content">
+			<a href="#home">Editar</a>
+			<a href="#about">Eliminar</a>
+			</div>
+			</div>
+			</td>
       </tr>
       <tr>
         <td>Jose</td>
@@ -67,6 +101,15 @@
         <td>6.426.146</td>
         <td>jose_r_97@mail.com</td>
         <td>Genius</td>
+		<td>
+			<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">+</button>
+			<div id="myDropdown" class="dropdown-content">
+			<a href="#home">Editar</a>
+			<a href="#about">Eliminar</a>
+			</div>
+			</div>
+			</td>
       </tr>
       <tr>
         <td>Julio</td>
@@ -74,6 +117,15 @@
         <td>9.198.247</td>
         <td>xXjulioXx@gmail.com</td>
         <td>Sony</td>
+		<td>
+			<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">+</button>
+			<div id="myDropdown" class="dropdown-content">
+			<a href="#home">Editar</a>
+			<a href="#about">Eliminar</a>
+			</div>
+			</div>
+			</td>
       </tr>
       <tr>
         <td>Ana</td>
@@ -81,6 +133,15 @@
         <td>14.751.208</td>
         <td>a_a@yahoo.com</td>
         <td>Windows</td>
+		<td>
+			<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">+</button>
+			<div id="myDropdown" class="dropdown-content">
+			<a href="#home">Editar</a>
+			<a href="#about">Eliminar</a>
+			</div>
+			</div>
+			</td>
       </tr>
           <tr>
         <td>Roraimon</td>
@@ -88,6 +149,15 @@
         <td>24.811.981</td>
         <td>raimond@gmail.com</td>
         <td>Sony</td>
+		<td>
+			<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">+</button>
+			<div id="myDropdown" class="dropdown-content">
+			<a href="#home">Editar</a>
+			<a href="#about">Eliminar</a>
+			</div>
+			</div>
+			</td>
       </tr>
           <tr>
         <td>Biman</td>
@@ -95,28 +165,52 @@
         <td>7.662.431</td>
         <td>transli@outlook.com</td>
         <td>Apple</td>
+		<td>
+			<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">+</button>
+			<div id="myDropdown" class="dropdown-content">
+			<a href="#home">Editar</a>
+			<a href="#about">Eliminar</a>
+			</div>
+			</div>
+			</td>
       </tr>
     </tbody>
   </table>
+  
+  
+ 
+  
 
-     <a id="regresar" href="/Views/Modulo5/Contacto_x_Compañia" class="btn btn-info ">Regresar</a>
+
+     <button type="button" onclick="goBack()" id="b-regresar"  class="btn btn-info ">Regresar</button>
 </div>
 
 
-    <asp:Table ID="Table1" runat="server" Width="100%"> 
-    <asp:TableRow>
-        <asp:TableCell>Name</asp:TableCell>
-        <asp:TableCell>Task</asp:TableCell>
-        <asp:TableCell>Hours</asp:TableCell>
-    </asp:TableRow>
-</asp:Table>  
 
-    TableRow row = new TableRow();
-TableCell cell1 = new TableCell();
-cell1.Text = "blah blah blah";
-row.Cells.Add(cell1);
-myTable.Rows.Add(row);
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+	document.get
+}
 
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 <script>
 $(document).ready(function(){
@@ -126,18 +220,14 @@ $(document).ready(function(){
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
-    });
-
-    function desplegar) {
-    var x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+});
 </script>
 
+     <script>
+function goBack() {
+    window.history.back()
+}
+</script>
 
 
 
