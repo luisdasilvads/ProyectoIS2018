@@ -207,6 +207,14 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\Modulo4\Agregar.aspx" />
+    <Content Include="Views\Modulo4\Consultar.aspx" />
+    <Content Include="Views\Modulo4\Consultar_submit.aspx" />
+    <Content Include="Views\Modulo4\Eliminar.aspx" />
+    <Content Include="Views\Modulo4\Eliminar_submit.aspx" />
+    <Content Include="Views\Modulo4\Empresas.aspx" />
+    <Content Include="Views\Modulo4\Modificar.aspx" />
+    <Content Include="Views\Modulo4\Modificar_submit.aspx" />
     <Content Include="Views\Modulo5\Contacto_leads.aspx" />
     <Content Include="Views\Modulo5\Contacto_x_Compañia.aspx" />
     <Content Include="Views\Modulo5\ConsultarContacto.aspx" />
@@ -266,6 +274,62 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modulo4\Agregar.aspx.cs">
+      <DependentUpon>Agregar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Modulo4\Agregar.aspx.designer.cs">
+      <DependentUpon>Agregar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modulo4\Consultar.aspx.cs">
+      <DependentUpon>Consultar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Modulo4\Consultar.aspx.designer.cs">
+      <DependentUpon>Consultar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modulo4\Consultar_submit.aspx.cs">
+      <DependentUpon>Consultar_submit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Modulo4\Consultar_submit.aspx.designer.cs">
+      <DependentUpon>Consultar_submit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modulo4\Eliminar.aspx.cs">
+      <DependentUpon>Eliminar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Modulo4\Eliminar.aspx.designer.cs">
+      <DependentUpon>Eliminar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modulo4\Eliminar_submit.aspx.cs">
+      <DependentUpon>Eliminar_submit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Modulo4\Eliminar_submit.aspx.designer.cs">
+      <DependentUpon>Eliminar_submit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modulo4\Empresas.aspx.cs">
+      <DependentUpon>Empresas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Modulo4\Empresas.aspx.designer.cs">
+      <DependentUpon>Empresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modulo4\Modificar.aspx.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Modulo4\Modificar.aspx.designer.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modulo4\Modificar_submit.aspx.cs">
+      <DependentUpon>Modificar_submit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Modulo4\Modificar_submit.aspx.designer.cs">
+      <DependentUpon>Modificar_submit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Modulo5\Contacto_leads.aspx.cs">
       <DependentUpon>Contacto_leads.aspx</DependentUpon>
