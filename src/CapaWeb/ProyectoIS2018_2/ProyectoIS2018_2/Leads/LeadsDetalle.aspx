@@ -34,10 +34,9 @@
                     </tr>   
                   </tbody>
             </table>
-            <button type="button" class="btn btn-primary">Actualizar</button>
-            <button type="button" class="btn btn-primary">Nueva Propuesta</button> 
-            <br /><br />
-            <button type="button" class="btn btn-success">Regresar</button>
+            <p><a href="LeadsActualizar.aspx" class="btn btn-primary btn-lg">Actualizar</a> <a href="LeadsPropuestas.aspx" class="btn btn-primary btn-lg">Nueva Propuesta</a></p>
+            <br /><br/>
+            <button type="button" class="btn btn-success" >Regresar</button>
         </div>
     </body>
 

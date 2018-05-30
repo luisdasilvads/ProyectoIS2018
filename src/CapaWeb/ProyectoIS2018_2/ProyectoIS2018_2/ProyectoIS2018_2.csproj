@@ -154,8 +154,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LeadsPropuestas.aspx" />
-    <Content Include="LeadsActualizar.aspx" />
+    <Content Include="Leads\LeadsPropuestas.aspx" />
+    <Content Include="Leads\LeadsActualizar.aspx" />
     <Content Include="About.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -216,18 +216,18 @@
     <Content Include="Views\web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LeadsPropuestas.aspx.cs">
+    <Compile Include="Leads\LeadsPropuestas.aspx.cs">
       <DependentUpon>LeadsPropuestas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LeadsPropuestas.aspx.designer.cs">
+    <Compile Include="Leads\LeadsPropuestas.aspx.designer.cs">
       <DependentUpon>LeadsPropuestas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LeadsActualizar.aspx.cs">
+    <Compile Include="Leads\LeadsActualizar.aspx.cs">
       <DependentUpon>LeadsActualizar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LeadsActualizar.aspx.designer.cs">
+    <Compile Include="Leads\LeadsActualizar.aspx.designer.cs">
       <DependentUpon>LeadsActualizar.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
