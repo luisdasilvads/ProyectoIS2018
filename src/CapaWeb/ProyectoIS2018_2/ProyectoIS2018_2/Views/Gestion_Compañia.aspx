@@ -10,12 +10,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/Gestion_Proyecto"><font color="#FFFFFF">S.A.C <small>Gestion de proyectos</font></small></a>
+                    <a class="navbar-brand" runat="server" href="~/Default"><font color="#FFFFFF">S.A.C <small>Gestion de proyectos</font></small></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/Gestion_Nombre">Buscar Proyecto</a></li>
-                        <li><a runat="server" href="~/Gestion_Compañia">Buscar Compañia</a></li>
+                        <li><a runat="server" href="~/Views/Gestion_Nombre">Buscar Proyecto</a></li>
+                        <li><a runat="server" href="~/Views/Gestion_Compañia">Buscar Compañia</a></li>
                         <li><a runat="server" href="~/Default">Volver</a></li>
                     </ul>
                 </div>
@@ -33,18 +33,16 @@
 			</h3>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-5">
-					   <input class="form-control input-lg" type="text" placeholder="Ingresa el Nombre">	
-					</div>
-					<div class="col-md-3">
-					   <button type="button" class="btn btn-success pull-left">
-						Buscar
-					   </button>
-					</div>
-					<div class="col-md-4">
+					<div class="col-md-offset-8 col-md-4 ">
+                      <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Ingrese nombre de la compañia">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default text-right" type="button">Buscar</button>
+                      </span>
+                    </div>
 				</div>
 			</div>
-		</div>
+		</div>>
 			<table class="table table-bordered">
 				<thead>
 					<tr>
@@ -68,7 +66,7 @@
 							1
 						</td>
 						<td>
-							Compañia 1
+							<a runat="server" href="~/Views/Gestion_Proyecto" data-toggle="tooltip" data-placement="Compañia 1" title="Compañia 1 informacion...">Nombre de Compañia</a>
 						</td>
 						<td>
 							Nombre Y Apellido
@@ -82,7 +80,7 @@
 							2
 						</td>
 						<td>
-							Compañia 2
+							<a runat="server" href="~/Views/Gestion_Proyecto" data-toggle="tooltip" data-placement="Compañia 2" title="Compañia 2 informacion...">Nombre de Compañia</a>
 						</td>
 						<td>
 							Nombre y Apellido
@@ -96,7 +94,7 @@
 							3
 						</td>
 						<td>
-							Compañia 3
+							<a runat="server" href="~/Views/Gestion_Proyecto" data-toggle="tooltip" data-placement="Compañia 3" title="Compañia 3 informacion...">Nombre de Compañia</a>
 						</td>
 						<td>
 							Nombre y Apellido
@@ -110,7 +108,7 @@
 							4
 						</td>
 						<td>
-							Compañia 4
+							<a runat="server" href="~/Views/Gestion_Proyecto" data-toggle="tooltip" data-placement="Compañia 4" title="Compañia 4 informacion...">Nombre de Compañia</a>
 						</td>
 						<td>
 							Nombre y Apellido
@@ -124,7 +122,7 @@
 							5
 						</td>
 						<td>
-							Compañia 5
+							<a runat="server" href="~/Views/Gestion_Proyecto" data-toggle="tooltip" data-placement="Compañia 5" title="Compañia 5 informacion...">Nombre de Compañia</a>
 						</td>
 						<td>
 							Nombre y Apellido

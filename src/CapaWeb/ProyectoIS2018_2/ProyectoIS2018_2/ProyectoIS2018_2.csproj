@@ -164,9 +164,10 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Gestion_Compañia.aspx" />
-    <Content Include="Gestion_Nombre.aspx" />
-    <Content Include="Gestion_Proyecto.aspx" />
+    <Content Include="Imagenes\man.png" />
+    <Content Include="Views\Gestion_Compañia.aspx" />
+    <Content Include="Views\Gestion_Nombre.aspx" />
+    <Content Include="Views\Gestion_Proyecto.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -239,25 +240,25 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Gestion_Compañia.aspx.cs">
+    <Compile Include="Views\Gestion_Compañia.aspx.cs">
       <DependentUpon>Gestion_Compañia.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Gestion_Compañia.aspx.designer.cs">
+    <Compile Include="Views\Gestion_Compañia.aspx.designer.cs">
       <DependentUpon>Gestion_Compañia.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Gestion_Nombre.aspx.cs">
+    <Compile Include="Views\Gestion_Nombre.aspx.cs">
       <DependentUpon>Gestion_Nombre.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Gestion_Nombre.aspx.designer.cs">
+    <Compile Include="Views\Gestion_Nombre.aspx.designer.cs">
       <DependentUpon>Gestion_Nombre.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Gestion_Proyecto.aspx.cs">
+    <Compile Include="Views\Gestion_Proyecto.aspx.cs">
       <DependentUpon>Gestion_Proyecto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Gestion_Proyecto.aspx.designer.cs">
+    <Compile Include="Views\Gestion_Proyecto.aspx.designer.cs">
       <DependentUpon>Gestion_Proyecto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
@@ -317,7 +318,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51426</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51426/</IISUrl>
+          <IISUrl>http://localhost:51426</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
