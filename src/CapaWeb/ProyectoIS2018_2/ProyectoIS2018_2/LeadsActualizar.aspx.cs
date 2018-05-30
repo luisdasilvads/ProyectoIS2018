@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace ProyectoIS2018_2
 {
-    public partial class LeadsPropuesta: Page
+    public partial class LeadsDetalle : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

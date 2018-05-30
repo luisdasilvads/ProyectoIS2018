@@ -22,15 +22,15 @@
                   <tbody>
                     <tr class="table-empresa">
                       <th scope="row">Empresa</th>
-                      <td>Column content</td>
+                      <td>Nombre de la Empresa</td>
                     </tr>
                     <tr class="table-contacto">
                       <th scope="row">Contacto</th>
-                      <td>Column content</td>
+                      <td>Nombre del Contacto</td>
                     </tr>
                     <tr class="table-propuesta">
                       <th scope="row">Propuesta</th>
-                      <td>Column content</td>
+                      <td>Propuesta</td>
                     </tr>   
                   </tbody>
             </table>
