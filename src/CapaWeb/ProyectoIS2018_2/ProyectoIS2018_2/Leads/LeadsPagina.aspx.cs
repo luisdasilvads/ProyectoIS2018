@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ProyectoIS2018_2.Leads
+namespace ProyectoIS2018_2
 {
-    public partial class LeadsPagina : System.Web.UI.Page
+    public partial class LeadsPagina : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

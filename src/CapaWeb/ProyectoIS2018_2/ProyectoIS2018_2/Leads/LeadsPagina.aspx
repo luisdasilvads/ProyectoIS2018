@@ -1,16 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="LeadsPagina.aspx.cs" Inherits="ProyectoIS2018_2.Leads.LeadsPagina" %>
-
+﻿<%@ Page Title="LeadsPagina" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="LeadsPagina.aspx.cs" Inherits="ProyectoIS2018_2.Leads.LeadsDetalle" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <!-- Vista lista general de todos los Leads -->
-
-
-    <h1>LEADS</h1>
-
-    <div class="container">
-        <h2>Lista de Leads</h2>
-
+    <h1 class="text-center">Leads</h1>
+    <div class="jumbotron">
+        <h2 style="text-align: left">Lista de Leads</h2>
         <table>
             <tbody>
                 <tr>
@@ -57,13 +52,19 @@
                 </tr>
             </tbody>
         </table>
-
-        <a id="botonDetalle" href="/Views/LeadsDetalle">Ver detalle</a>
-        <a id="botonEliminar" href="/Views/LeadsEliminar">Eliminar</a>
-        <a id="botonNuevo" href="/Views/LeadsNuevo">NUEVO</a>
-    </div>
-
-
+        <p>
+        </p>
+        <div class="row">
+        <div class="col-md-4">
+                <a class="btn btn-primary btn-lg" href="LeadsDetalle.aspx">Ver Detalle</a>
+        </div>
+        <div class="col-md-4">
+                <a class="btn btn-primary btn-lg" href="LeadsActualizar.aspx">Actualizar Lead</a>
+        </div>
+        <div class="col-md-4">
+                <a class="btn btn-primary btn-lg" href="LeadsNuevo.aspx">Nuevo Lead</a>
+        </div>
+        </div>
+      </div>
+        
 </asp:Content>
-
-

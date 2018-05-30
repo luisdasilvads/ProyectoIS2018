@@ -1,26 +1,25 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="LeadsNuevo.aspx.cs" Inherits="ProyectoIS2018_2.Leads.LeadsNuevo" %>
+﻿<%@ Page Title="LeadsNuevo1" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="LeadsNuevo.aspx.cs" Inherits="ProyectoIS2018_2.Leads.LeadsDetalle" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <!-- Vista de formulario para un nuevo Lead -->
 
-        <h1>LEADS</h1>
+        <h1 class="text-center">Leads</h1>
 
-        <div class="container">
-            <h2>Nuevo Lead</h2>
-
-            <a id="botonRegresar" href="~/Views/LeadsPagina/">Regresar</a>
-
-            <form action="/action.php" method="post">
-                Compañia: <input name="nameCom" type="text">
-                Nombre del contacto: <input name="nameCont" type="text">
-                <input checked="checked" name="tipoContacto" type="radio" value="telefono" /> Telefono <input name="tipoContacto" type="radio" value="email"> Email
-                Contacto: <input name="datoCont" type="text"> <br>
-                <textarea cols="20" name="comments" rows="5">Comentarios</textarea> <br>
-                <label><input name="terms" type="checkbox" value="tandc" />Aceptar terminos</label>
-                <input type="submit" value="Submit" class="popup">
-                <span id="miPopUp">Nuevo Lead agregado exitosamente.</span>
-            </form>
+        <div class="jumbotron">
+        <h2>Nuevo Lead</h2>
+        <h5>Empresa:
+        <select>
+        <option>Empresa1</option>
+        <option>Empresa2</option>
+        <option>Empresa3</option>
+        <option>Empresa4</option>
+        </select>
+        </h5>
+        <h5>Nombre del Contacto:<input type="text" size="15" maxlength="30" value="Nombre Del Contacto" name="Nombre Del Contacto"></h5>
+        <h5>Telefono del Contacto:<input type="text" size="15" maxlength="30" value="Telefono Del Contacto" name="Telefono Del Contacto"></h5>
+        <h5>Correo del Contacto:<input type="text" size="15" maxlength="30" value="Correo Del Contacto" name="Correo del Contacto"></h5>
+        <h5>Detalles:</h5><textarea rows="5" cols="30" name="Detalles">Aquí se ingresarán todos los detalles del lead...</textarea>
+        <p><a href="LeadsPagina.aspx" class="btn btn-primary btn-lg">Enviar</a></p>
         </div>
-
-
 </asp:Content>
-

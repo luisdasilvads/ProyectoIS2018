@@ -1,4 +1,4 @@
-﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LeadsPropuestas.aspx.cs" Inherits="ProyectoIS2018_2.About" %>
+﻿<%@ Page Title="Propuestas" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LeadsPropuestas.aspx.cs" Inherits="ProyectoIS2018_2.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h1 class="text-center">Leads</h1>
@@ -16,6 +16,5 @@
         <h5>Gerente De Propuesta:<input type="text" size="15" maxlength="30" value="Nombre Del Gerente" name="Nombre Del Gerente"></h5>
         <h5>Detalles:</h5><textarea rows="5" cols="30" name="Detalles">Aquí se ingresarán todos los detalles de la propuesta...</textarea>
         <p><a href="LeadsDetalle.aspx" class="btn btn-primary btn-lg">Enviar</a></p>
-   
     </div>
     </asp:Content>

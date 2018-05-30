@@ -154,6 +154,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Leads\LeadsPagina1.aspx" />
+    <Content Include="Leads\LeadsNuevo1.aspx" />
     <Content Include="Leads\LeadsPropuestas.aspx" />
     <Content Include="Leads\LeadsActualizar.aspx" />
     <Content Include="About.aspx" />
@@ -216,6 +218,20 @@
     <Content Include="Views\web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Leads\LeadsPagina1.aspx.cs">
+      <DependentUpon>LeadsPagina1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Leads\LeadsPagina1.aspx.designer.cs">
+      <DependentUpon>LeadsPagina1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Leads\LeadsNuevo1.aspx.cs">
+      <DependentUpon>LeadsNuevo1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Leads\LeadsNuevo1.aspx.designer.cs">
+      <DependentUpon>LeadsNuevo1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Leads\LeadsPropuestas.aspx.cs">
       <DependentUpon>LeadsPropuestas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

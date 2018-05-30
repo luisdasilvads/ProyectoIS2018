@@ -1,4 +1,4 @@
-﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LeadsActualizar.aspx.cs" Inherits="ProyectoIS2018_2.About" %>
+﻿<%@ Page Title="LeadsActualizar" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LeadsActualizar.aspx.cs" Inherits="ProyectoIS2018_2.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h1 class="text-center">Leads</h1>
@@ -43,7 +43,7 @@
                 <a class="btn btn-primary btn-lg" href="EliminarLead">Eliminar Leads</a>
         </div>
         <div class="col-md-4">
-                <a class="btn btn-primary btn-lg" href="ActualizarLead">Actualizar Leads</a>
+                <a class="btn btn-primary btn-lg" href="LeadsPagina.aspx">Actualizar Leads</a>
         </div>
         </div>
     </div>

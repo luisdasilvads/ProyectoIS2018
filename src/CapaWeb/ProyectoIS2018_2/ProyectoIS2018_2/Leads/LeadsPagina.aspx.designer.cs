@@ -10,7 +10,6 @@
 namespace ProyectoIS2018_2.Leads {
     
     
-    public partial class LeadsPagina
-    {
+    public partial class LeadsPagina {
     }
 }

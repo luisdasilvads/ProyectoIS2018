@@ -1,19 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="LeadsDetalle.aspx.cs" Inherits="ProyectoIS2018_2.Leads.LeadsDetalle" %>
-
-
+﻿<%@ Page  title="LeadsDetalle" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="LeadsDetalle.aspx.cs" Inherits="ProyectoIS2018_2.Leads.LeadsDetalle" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+        <h1 class="text-center">Leads</h1>
 
-    <head>
-            <h1 align="center">LEADS</h1>
-    </head>
-
-   <body>
-       
-        <div class="container">
-            
-            <table class="table table-hover">
+        <div class="jumbotron"> 
+            <h2>Detalle Del Lead</h2>
+            <table class="table table-hover">     
                   <thead>
                     <tr>
                       <th scope="col"></th>
@@ -34,11 +27,16 @@
                     </tr>   
                   </tbody>
             </table>
-            <p><a href="LeadsActualizar.aspx" class="btn btn-primary btn-lg">Actualizar</a> <a href="LeadsPropuestas.aspx" class="btn btn-primary btn-lg">Nueva Propuesta</a></p>
-            <br /><br/>
-            <button type="button" class="btn btn-success" >Regresar</button>
+            <div class="row">
+            <div class="col-md-4">
+                <a class="btn btn-primary btn-lg" href="LeadsActualizar.aspx">Actualizar</a>
+                </div>
+            <div class="col-md-4">
+                <a class="btn btn-primary btn-lg" href="LeadsPropuestas.aspx">Nueva Propuesta</a>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-primary btn-lg" href="LeadsPagina.aspx">Regresar</a>
+            </div>
+            </div>    
         </div>
-    </body>
-
-
 </asp:Content>
