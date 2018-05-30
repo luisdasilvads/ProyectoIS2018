@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <style>
+  <style>
 
         #nombre, #apellido, #email,#Confirmapassword,#password, #telefono ,#ofitelefono, #cedula ,#empresa, #rol ,#optionSex ,#ciudad,#pais,#codigoPostal ,#empresa,#direccion,#optionWork   {
             
@@ -184,6 +184,9 @@
 
     <div>
         <button class="btn btn-success ">Guardar </button>
+
+         <a href="/Views/Modulo5/Contacto_x_Compañia" class="btn btn-danger  ">Cancelar</a> 
+
     </div>
    
 </div>

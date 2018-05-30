@@ -10,6 +10,6 @@
 namespace ProyectoIS2018_2.Views.Modulo5 {
     
     
-    public partial class WebForm2 {
+    public partial class Contacto_leads {
     }
 }
